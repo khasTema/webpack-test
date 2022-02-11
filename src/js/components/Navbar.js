@@ -6,9 +6,9 @@ export default function Navbar(){
         <nav className="nav">
             <h2 className="title">This is React with WebPack</h2>
             <div className="nav--list">
-                <Link to="/">Home</Link>
-                <Link to="/about">About</Link>
-                <Link to="/contacts">Contacts</Link>
+                <Link to="/">Star Wars</Link>
+                <Link to="/about">Lorem</Link>
+                <Link to="/contacts">Counter</Link>
             </div>
         </nav>
     )
