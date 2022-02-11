@@ -1,5 +1,6 @@
 .nav {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
@@ -14,9 +15,11 @@
 }
 
 .nav--list {
+    margin-top: 1em;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 40%;
+    width: 80%;
 
     & a{
         display: inline-block;
@@ -26,9 +29,21 @@
         font-weight: 600;
         padding: 1em;
         border-radius: 5px;
+        margin-bottom: 0.5em;
 
         &:hover { 
             box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.6) inset;
         }
+    }
+}
+
+@media screen and (min-width: 870px) {
+    .nav {
+        flex-direction: row;
+    }
+
+    .nav--list {
+        margin-top: 0;
+        width: 40%;
     }
 }
