@@ -23,10 +23,10 @@ export default function Home(){
                 <p>Release Date: {movieData.release_date}</p>
                 <p>{movieData.opening_crawl}</p>
             </div>
-            <button className="counter-btn"
+            <button className="nexprev-btn"
                     onClick={() => setMovieNumber(prev => prev -1)}
                     disabled={movieNumber === 1}>Prev</button>
-            <button className="counter-btn"
+            <button className="nexprev-btn"
                     onClick={() => setMovieNumber(prev => prev +1)}
                     disabled={movieNumber === 6}>Next</button>
         </>
