@@ -9,6 +9,7 @@ export default function Navbar(){
                 <Link to="/">Star Wars</Link>
                 <Link to="/about">Lorem</Link>
                 <Link to="/contacts">Counter</Link>
+                <Link to="/random">Random</Link>
             </div>
         </nav>
     )
