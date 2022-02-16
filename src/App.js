@@ -22,7 +22,7 @@ function App()
                     <Route path="/random" element={<RandomStuff 
                                                     text={'here we go with Random'} 
                                                     radius={50}
-                                                    color={'red'}/>} />
+                                                    color={'green'}/>} />
                 </Routes>
             </main>
             <Footer />
