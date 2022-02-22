@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
 
 
-export default function About(){
+function About(){
 
     const [textData, setTextData] = useState([])
 
@@ -22,3 +22,5 @@ export default function About(){
         </>
     )
 }
+
+export default React.memo(About)

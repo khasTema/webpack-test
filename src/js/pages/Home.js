@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from "react";
 
 
-export default function Home(){
+function Home(){
 
     const [movieData, setMovieData] = useState([])
     const [movieNumber, setMovieNumber] = useState(1)
+
 
     useEffect(() => {
         fetch(`https://swapi.dev/api/films/${movieNumber}/`)
@@ -33,3 +34,4 @@ export default function Home(){
     )
 }
 
+export default React.memo(Home)
